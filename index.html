@@ -10,95 +10,97 @@
     <link rel="stylesheet" href="styles/soft-reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <nav class="main-nav">
-                <p class="main-nav__logo">
-                    <a href="./index.html" class="main-nav__logo-link">Logo</a>
-                </p>
-                <ul class="main-nav__menu">
-                    <li class="main-nav__menu-item">
-                        <a href="#" class="main-nav__menu-item-link">About</a>
-                    </li>
-                    <li class="main-nav__menu-item">
-                        <a href="#" class="main-nav__menu-item-link">Work</a>
-                    </li>
-                    <li class="main-nav__menu-item">
-                        <a href="#" class="main-nav__menu-item-link">Contact</a>
-                    </li>
-                </ul>
+<body class="page">
+    <header class="header page__header">
+        <div class="top-bar">
+            <p class="top-bar__logo logo">
+                <a href="./index.html" class="top-bar__link">Logo</a>
+            </p>
+
+            <nav class="main-menu">
+                <a href="#" class="main-menu__link">About</a>
+                <a href="#" class="main-menu__link">Work</a>
+                <a href="#" class="main-menu__link">Contact</a>
             </nav>
-            <div class="welcome">
-                <div class="welcome__row">
-                    <div class="welcome__column">
-                        <h1 class="welcome__title">Visual Designer</h1>
-                        <h2 class="welcome__subtitle">Branding | Image making</h2>
-                        <p class="welcome__description">
-                            This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
-                        </p>
+        </div>
+        <div class="welcome">
+            <div class="welcome__row">
+                <div class="welcome__column">
+                    <h1 class="welcome__title title">Visual Designer</h1>
+                    <h2 class="welcome__subtitle subtitle">Branding | Image making</h2>
+                    <p class="welcome__description description">
+                        This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
+                    </p>
+                </div>
+                <div class="welcome__column">
+                    <img class="welcome__main-photo main-photo" src="/images/welcome__photo.jpg" alt="My photo" 
+                    width="408.97" height="549.09">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main page__main">
+        <section class="companies-clients">
+            <ul class="companies-clients__list">
+                <li class="companies-clients__item">
+                    <img class="companies-clients__logo" src="images/svg/google.svg" alt="Google">
+                </li>
+                <li class="companies-clients__item">
+                    <img class="companies-clients__logo" src="images/svg/nike.svg" alt="Nike">
+                </li>
+                <li class="companies-clients__item">
+                    <img class="companies-clients__logo" src="images/svg/samsung.svg" alt="Samsung">
+                </li>
+                <li class="companies-clients__item">
+                    <img class="companies-clients__logo" src="images/svg/apple.svg" alt="Apple">
+                </li>
+                <li class="companies-clients__item">
+                    <img class="companies-clients__logo" src="images/svg/intenrcom.svg" alt="Interncom">
+                </li>
+                <li class="companies-clients__item">
+                    <img class="companies-clients__logo" src="images/svg/addidas.svg" alt="Addidas">
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <div class="skills__body">
+                <div class="skills__row">
+                    <div class="skills__column">
+                        <div class="skills-card">
+                            <img class="skills-card__image" src="images/svg/abstract_art_1.svg" alt="abstract art">
+                            <h3 class="skills-card__title">Product design</h3>
+                            <p class="skills-card__description">
+                                This is a template Figma file, turned into code using Anima. 
+                                Learn more at AnimaApp.com
+                            </p>
+                        </div>
                     </div>
-                    <div class="welcome__column">
-                        <img src="/images/welcome__photo.jpg" alt="My photo" width="408.97" height="549.09">
+                    <div class="skills__column">
+                        <div class="skills-card">
+                            <img class="skills-card__image" src="images/svg/abstract_art_2.svg" alt="abstract art">
+                            <h3 class="skills-card__title">Product design</h3>
+                            <p class="skills-card__description">
+                                This is a template Figma file, turned into code using Anima. 
+                                Learn more at AnimaApp.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skills__column">
+                        <div class="skills-card">
+                            <img class="skills-card__image" src="images/svg/abstract_art_3.svg" alt="abstract art">
+                            <h3 class="skills-card__title">Product design</h3>
+                            <p class="skills-card__description">
+                                This is a template Figma file, turned into code using Anima. 
+                                Learn more at AnimaApp.com
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="clients">
-                <ul class="clients__list">
-                    <li class="clients__list-item">
-                        <img src="images/svg/google.svg" alt="Google">
-                    </li>
-                    <li class="clients__list-item">
-                        <img src="images/svg/nike.svg" alt="Nike">
-                    </li>
-                    <li class="clients__list-item">
-                        <img src="images/svg/samsung.svg" alt="Samsung">
-                    </li>
-                    <li class="clients__list-item">
-                        <img src="images/svg/apple.svg" alt="Apple">
-                    </li>
-                    <li class="clients__list-item">
-                        <img src="images/svg/intenrcom.svg" alt="Interncom">
-                    </li>
-                    <li class="clients__list-item">
-                        <img src="images/svg/addidas.svg" alt="Addidas">
-                    </li>
-                </ul>
-            </div>
-            <div class="skills">
-                <ul class="skills__list">
-                    <li class="skills__list-item">
-                        <img src="images/svg/abstract_art_1.svg" alt="abstract art">
-                        <h3 class="skills_list-item-title">Product design</h3>
-                        <p class="skills_list-item-description">
-                            This is a template Figma file, turned into code using Anima. 
-                            Learn more at AnimaApp.com
-                        </p>
-                    </li>
-                    <li class="skills__list-item">
-                        <img src="images/svg/abstract_art_2.svg" alt="abstract art">
-                        <h3 class="skills_list-item-title">Art direction</h3>
-                        <p class="skills_list-item-description">
-                            This is a template Figma file, turned into code using Anima. 
-                            Learn more at AnimaApp.com
-                        </p>
-                    </li>
-                    <li class="skills__list-item">
-                        <img src="images/svg/abstract_art_3.svg" alt="abstract art">
-                        <h3 class="skills_list-item-title">Visual design</h3>
-                        <p class="skills_list-item-description">
-                            This is a template Figma file, turned into code using Anima. 
-                            Learn more at AnimaApp.com
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-    
-        </footer>
-    </div>
+        </section>
+    </main>
+    <footer class="footer page__footer">
+
+    </footer>
 </body>
 </html>
