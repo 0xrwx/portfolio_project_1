@@ -64,8 +64,42 @@
 .welcome {
     display: flex;
     justify-content: space-between;
+    margin-top: 93px;
+    margin-bottom: 78px;
 }
 
 .welcome__title {
     margin: 46px 0px 50px 0px;
 }
+
+.companies-clients {
+    padding: 66.59px 0px 56.59px 0px;
+}
+
+.companies-clients__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__row {
+    margin-top: 75px;
+    display: flex;
+}
+
+.skills__column {
+    flex: 0 0 33.333%;
+    padding: 60px 0px 60px 0px;
+}
+
+.skills-card {
+    text-align: center;
+}
+
+.skills-card__title {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 42px;
+    margin: 61px 0px 19px 0px;
+}
+
