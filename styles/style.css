@@ -16,6 +16,10 @@
     padding: 0px 100px 0px 100px;
 }
 
+.display-none {
+    display: none;
+}
+
 .top-bar {
     margin-top: 24.5px;
     margin-bottom: 25.5px;
