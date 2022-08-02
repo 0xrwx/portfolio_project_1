@@ -211,55 +211,63 @@
     <footer class="footer page__footer">
         <div class="footer__row">
             <div class="footer__column">
-                <h2 class="footer__title">Lets work together</h2>
-                <p class="footer__subtitle">
-                    This is a template Figma file, turned into code using Anima. 
-                    Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. 
-                    Learn more at AnimaApp.com
-                </p>
-                <div class="social-networks">
-                    <ul class="social-networks__list">
-                        <li class="social-networks__item">
-                            <a class="social-networks__link">
-                                <img src="images/svg/Discord.svg" alt="Discord" class="social-networks__image"
-                                width="36" height="36">
-                            </a>
-                        </li>
-                        <li class="social-networks__item">
-                            <a class="social-networks__link">
-                                <img src="images/svg/Facebook.svg" alt="Facebook" class="social-networks__image"
-                                width="36" height="36">
-                            </a>
-                        </li>
-                        <li class="social-networks__item">
-                            <a class="social-networks__link">
-                                <img src="images/svg/Dribbble.svg" alt="Dribble" class="social-networks__image"
-                                width="36" height="36">
-                            </a>
-                        </li>
-                        <li class="social-networks__item">
-                            <a class="social-networks__link">
-                                <img src="images/svg/Instagram.svg" alt="Instagram" class="social-networks__image"
-                                width="36" height="36">
-                            </a>
-                        </li>
-                        <li class="social-networks__item">
-                            <a class="social-networks__link">
-                                <img src="images/svg/Behance.svg" alt="Behance" class="social-networks__image"
-                                width="36" height="36">
-                            </a>
-                        </li>
-                    </ul>
+                <div class="about-us">
+                    <h2 class="about-us__title">Lets work together</h2>
+                    <p class="about-us__subtitle">
+                        This is a template Figma file, turned into code using Anima. 
+                        Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. 
+                        Learn more at AnimaApp.com
+                    </p>
+                    <div class="social-networks">
+                        <ul class="social-networks__list">
+                            <li class="social-networks__item">
+                                <a class="social-networks__link">
+                                    <img src="images/svg/Discord.svg" alt="Discord" class="social-networks__image"
+                                    width="36" height="36">
+                                </a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a class="social-networks__link">
+                                    <img src="images/svg/Facebook.svg" alt="Facebook" class="social-networks__image"
+                                    width="36" height="36">
+                                </a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a class="social-networks__link">
+                                    <img src="images/svg/Dribbble.svg" alt="Dribble" class="social-networks__image"
+                                    width="36" height="36">
+                                </a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a class="social-networks__link">
+                                    <img src="images/svg/Instagram.svg" alt="Instagram" class="social-networks__image"
+                                    width="36" height="36">
+                                </a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a class="social-networks__link">
+                                    <img src="images/svg/Behance.svg" alt="Behance" class="social-networks__image"
+                                    width="36" height="36">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer__column">
                 <form action="" class="contact-form">
-                    <!-- <label for="name">Name:</label> <br> -->
-                    <input type="text" id="name" name="name" class="contact-form__input"> <br>
-                    <!-- <label for="Email">Email:</label><br> -->
-                    <input type="email" id="Email" name="Email" class="contact-form__input"> <br>
-                    <!-- <label for="Description">Type your message here:</label> <br> -->
-                    <input type="text" id="Description" name="Description" class="contact-form__input"> <br>
+                    <div class="contact-form__container">
+                        <input type="text" name="name" class="contact-form__input"
+                        placeholder="Name" maxlength="40">
+                    </div>
+                    <div class="contact-form__container">
+                        <input type="email" name="email" class="contact-form__input"
+                        placeholder="Email" maxlength="40">
+                    </div>
+                    <div class="contact-form__container contact-form__container--description">
+                        <textarea rows = "8" name = "description" class="contact-form__textarea"
+                        placeholder="Type your message here" maxlength="500"></textarea>
+                    </div>
                     <button type="submit" class="contact-form__submit">Submit</button>
                 </form>
             </div>

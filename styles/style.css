@@ -10,7 +10,9 @@
     color: #2D2D2D;
 }
 
-.page__main, .page__footer, .welcome{
+.page__main, 
+.page__footer, 
+.welcome{
     padding: 0px 100px 0px 100px;
 }
 
@@ -30,7 +32,8 @@
     line-height: 30px;
 }
 
-.top-bar__link, .main-menu__link {
+.top-bar__link, 
+.main-menu__link {
     text-decoration-line: underline;
     text-decoration-thickness: 0.55px;
 }
@@ -135,6 +138,10 @@
     margin-bottom: 54px;
 }
 
+.personal-clients__item {
+    margin-bottom: 146.9px;
+}
+
 .client-card {
     background: #F3F3F3;
     padding-top: 24.31px;
@@ -181,4 +188,69 @@ img.client-card__logo {
 .client-card__info {
     overflow: hidden;
     clear: right;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 35.86px;
+    margin-top: 55.21;
+}
+
+.about-us__subtitle {
+    width: 359.7px;
+    margin-bottom: 55.93px;
+}
+
+.social-networks__list {
+    display: flex;
+}
+
+.social-networks__item {
+    margin-right: 12px;
+}
+
+.contact-form__container {
+    width: 530px;
+    height: 70px;
+    background: #F3F3F3;
+
+    padding: 24px 31.16px 19px 33.63px;
+    margin-bottom: 18.3px;
+    
+}
+
+.contact-form__container--description {
+    width: 530px;
+    height: 215px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    background: #F3F3F3;
+    border: none;
+    width: 465.21px;
+    resize: none;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    outline: none;
+}
+
+.contact-form__submit {
+    width: 235px;
+    height: 80px;
+    color: white;
+    background-color: #2D2D2D;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.55px;
+    margin-top: 43.8px;
+    margin-bottom: 149.74px;
 }
