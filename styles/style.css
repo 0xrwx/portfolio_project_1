@@ -48,3 +48,24 @@
 .main-menu__link--two {
     margin-right: 51px;
 }
+
+.title {
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 102px;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__title {
+    margin: 46px 0px 50px 0px;
+}
