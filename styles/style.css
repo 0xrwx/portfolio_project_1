@@ -126,3 +126,59 @@
     line-height: 30px;
     margin: 15px 0px 10px 0px;
 }
+
+.personal-clients__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.client-card {
+    background: #F3F3F3;
+    padding-top: 24.31px;
+}
+
+.client-card__score {
+    width: 130px;
+}
+
+.client-card__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.client-card {
+    padding-bottom: 32.2px;
+}
+
+.personal-clients__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-card__text {
+    margin: 24.31px 40.01px 133.71px 28.13px;
+}
+
+img.client-card__score, 
+img.client-card__logo {
+    display: block;
+}
+
+.client-card__score {
+    margin: 5px 103.19px 10.78px 0px;
+}
+
+.client-card__logo {
+    float: left;
+    margin-right: 19.79px;
+    margin-left: 28.13px;
+}
+
+.client-card__info {
+    overflow: hidden;
+    clear: right;
+}
