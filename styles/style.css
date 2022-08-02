@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+
+.page {
+    font-family: 'Epilogue', sans-serif;
+    width: 1280px;
+    margin: 0 auto;
+}
+.page_container {
+    padding: 0px 100px 0px 100px;
+}
