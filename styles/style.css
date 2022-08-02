@@ -4,7 +4,47 @@
     font-family: 'Epilogue', sans-serif;
     width: 1280px;
     margin: 0 auto;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
 }
-.page_container {
+
+.page__main, .page__footer, .welcome{
     padding: 0px 100px 0px 100px;
+}
+
+.top-bar {
+    margin-top: 24.5px;
+    margin-bottom: 25.5px;
+    margin-left: 44.28px;
+    margin-right: 57.55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-logo {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.top-bar__link, .main-menu__link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.55px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu__link--one {
+    margin-right: 50px;
+}
+
+.main-menu__link--two {
+    margin-right: 51px;
 }
