@@ -2,7 +2,7 @@
 
 .page {
     font-family: 'Epilogue', sans-serif;
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     font-weight: 400;
     font-size: 17px;
@@ -103,3 +103,26 @@
     margin: 61px 0px 19px 0px;
 }
 
+.gallery__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.gallery__list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.gallery__item {
+    margin-bottom: 60px;
+}
+
+.gallery-card__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 15px 0px 10px 0px;
+}
