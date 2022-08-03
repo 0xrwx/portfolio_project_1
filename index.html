@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/soft-reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body class="page">
     <header class="header page__header">
@@ -274,18 +275,19 @@
                 </div>
             </div>
             <div class="footer__column">
-                <form action="#" class="contact-form">
+                <form class="contact-form" name="contact" onsubmit="return doForm()">
                     <div class="contact-form__container">
                         <input type="text" name="name" class="contact-form__input"
-                        placeholder="Name" maxlength="40">
+                        id="user-text" placeholder="Name" maxlength="40" required>
                     </div>
                     <div class="contact-form__container">
                         <input type="email" name="email" class="contact-form__input"
-                        placeholder="Email" maxlength="40">
+                        id="user-email" placeholder="Email" maxlength="40" required>
                     </div>
                     <div class="contact-form__container contact-form__container--description">
                         <textarea rows = "8" name = "description" class="contact-form__textarea"
-                        placeholder="Type your message here" maxlength="500"></textarea>
+                        id="user-description" placeholder="Type your message here" 
+                        maxlength="500" required></textarea>
                     </div>
                     <button type="submit" class="contact-form__submit">Submit</button>
                 </form>
