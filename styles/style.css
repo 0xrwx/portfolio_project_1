@@ -153,10 +153,6 @@
     padding-top: 24.31px;
 }
 
-.client-card__score {
-    width: 130px;
-}
-
 .client-card__text {
     font-weight: 600;
     font-size: 20px;
@@ -210,7 +206,7 @@ img.client-card__logo {
 }
 
 .about-us__subtitle {
-    width: 359.7px;
+    max-width: 359.7px;
     margin-bottom: 55.93px;
 }
 
