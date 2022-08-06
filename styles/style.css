@@ -59,12 +59,6 @@
     line-height: 30px;
 }
 
-.top-bar__link, 
-.main-menu__link {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.55px;
-}
-
 .main-menu {
     display: flex;
     justify-content: space-between;
@@ -200,7 +194,7 @@
     margin-top: 75px;
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 130px;
     justify-content: space-between;
 }
 
@@ -221,11 +215,7 @@
     font-weight: 600;
     font-size: 27px;
     line-height: 42px;
-    margin: 61px 0px 19px 0px;
-}
-
-.skills-card__description {
-
+    margin: 51px 0px 19px 0px;
 }
 
 .gallery__title {
@@ -268,17 +258,14 @@
 
 .client-card {
     background: #F3F3F3;
-    padding-top: 24.31px;
+    padding-top: 0.016px;
+    padding-bottom: 32.2px;
 }
 
 .client-card__text {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-}
-
-.client-card {
-    padding-bottom: 32.2px;
 }
 
 .personal-clients__list {
@@ -288,7 +275,7 @@
 }
 
 .client-card__text {
-    margin: 24.31px 40.01px 133.71px 28.13px;
+    margin: 20px 30px 133.71px 28.13px;
 }
 
 img.client-card__score, 
@@ -303,7 +290,7 @@ img.client-card__logo {
 .client-card__logo {
     float: left;
     margin-right: 19.79px;
-    margin-left: 28.13px;
+    margin-left: 30px;
 }
 
 .client-card__info {
@@ -347,7 +334,7 @@ img.client-card__logo {
     height: 70px;
     background: #F3F3F3;
 
-    padding: 24px 31.16px 19px 33.63px;
+    padding: 24px 31.16px 19px 32px;
     margin-bottom: 18.3px;
     
 }
@@ -356,6 +343,7 @@ img.client-card__logo {
     height: 215px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    padding-top: 35px;
 }
 
 .contact-form__input,
@@ -381,6 +369,8 @@ img.client-card__logo {
     text-decoration-thickness: 0.55px;
     margin-top: 43.8px;
     margin-bottom: 149.74px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .contact-form {
