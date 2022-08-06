@@ -2,25 +2,48 @@
 
 .page {
     font-family: 'Epilogue', sans-serif;
-    max-width: 1280px;
-    margin: 0 auto;
     font-weight: 400;
     font-size: 17px;
     line-height: 27px;
     color: #2D2D2D;
 }
 
-.page__main, 
-.page__footer, 
-.welcome{
-    padding: 0px 100px 0px 100px;
+.page__container {
+    max-width: 1280px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.wrapper-top {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.wrapper-content {
+    max-width: 1080px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper-content {
+        width: 320px;
+    }
+    
+    .gallery-card__image {
+        width: 320px;
+    }
+
+    .main-menu {
+        display: none;
+    }
 }
 
 .display-none {
     display: none;
 }
 
-.top-bar {
+.page__top-bar {
     margin-top: 24.5px;
     margin-bottom: 25.5px;
     margin-left: 44.28px;
@@ -34,12 +57,6 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-}
-
-.top-bar__link, 
-.main-menu__link {
-    text-decoration-line: underline;
-    text-decoration-thickness: 0.55px;
 }
 
 .main-menu {
@@ -62,6 +79,34 @@
     line-height: 102px;
 }
 
+@media screen and (max-width: 767px)  {
+    .title {
+        font-size: 65px;
+        line-height: 67px;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .top-bar__logo {
+        margin: 0 auto;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .page__top-bar {
+        margin: 25px auto;
+    }
+}
+
 .subtitle {
     font-weight: 600;
     font-size: 20px;
@@ -71,43 +116,106 @@
 .welcome {
     display: flex;
     justify-content: space-between;
-    margin-top: 93px;
+    padding-top: 75px;
     margin-bottom: 78px;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1150px)  {
+    .main-photo {
+        width: 318px;
+        height: 370px;
+    }
+}
+
+.welcome__text {
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 767px)  {
+    .welcome__text {
+        margin-top: 44.17px;
+    }
+
+    .welcome {
+        padding-top: 0px;
+    }
+}
+
 
 .welcome__title {
     margin: 46px 0px 50px 0px;
 }
 
+@media screen and (max-width: 767px)  {
+    .welcome__title {
+        margin-bottom: 20.57px;
+    }
+
+    .welcome__image {
+        margin-top: 69.5px;
+    }
+}
+
+.welcome__description {
+    max-width: 415px;
+    min-width: 320px;
+}
+
 .companies-clients {
-    padding: 66.59px 0px 56.59px 0px;
+    max-width: 1078.38px;
+    min-width: 319.1px;
 }
 
 .companies-clients__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+}
+
+.companies-clients__item {
+    align-self: center;
+}
+
+@media screen and (max-width: 767px)  {
+    .companies-clients__item {
+        width: calc(50% - 40px);
+        text-align: center;
+
+        margin-top: 60px;
+    }
+}
+
+.margin-top-zero {
+    margin-top: 0px;
 }
 
 .skills__row {
     margin-top: 75px;
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 130px;
+    justify-content: space-between;
 }
 
 .skills__column {
-    flex: 0 0 33.333%;
     padding: 60px 0px 60px 0px;
+    width: 330px;
+
+    display: flex;
+    justify-content: center;    
 }
 
 .skills-card {
     text-align: center;
+    width: 250px;
 }
 
 .skills-card__title {
     font-weight: 600;
     font-size: 27px;
     line-height: 42px;
-    margin: 61px 0px 19px 0px;
+    margin: 51px 0px 19px 0px;
 }
 
 .gallery__title {
@@ -150,11 +258,8 @@
 
 .client-card {
     background: #F3F3F3;
-    padding-top: 24.31px;
-}
-
-.client-card__score {
-    width: 130px;
+    padding-top: 0.016px;
+    padding-bottom: 32.2px;
 }
 
 .client-card__text {
@@ -163,17 +268,14 @@
     line-height: 30px;
 }
 
-.client-card {
-    padding-bottom: 32.2px;
-}
-
 .personal-clients__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .client-card__text {
-    margin: 24.31px 40.01px 133.71px 28.13px;
+    margin: 20px 30px 133.71px 28.13px;
 }
 
 img.client-card__score, 
@@ -188,7 +290,7 @@ img.client-card__logo {
 .client-card__logo {
     float: left;
     margin-right: 19.79px;
-    margin-left: 28.13px;
+    margin-left: 30px;
 }
 
 .client-card__info {
@@ -199,6 +301,11 @@ img.client-card__logo {
 .footer__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-us {
+    margin-bottom: 69px;
 }
 
 .about-us__title {
@@ -210,7 +317,7 @@ img.client-card__logo {
 }
 
 .about-us__subtitle {
-    width: 359.7px;
+    max-width: 359.7px;
     margin-bottom: 55.93px;
 }
 
@@ -227,14 +334,16 @@ img.client-card__logo {
     height: 70px;
     background: #F3F3F3;
 
-    padding: 24px 31.16px 19px 33.63px;
+    padding: 24px 31.16px 19px 32px;
     margin-bottom: 18.3px;
     
 }
 
 .contact-form__container--description {
-    width: 530px;
     height: 215px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 35px;
 }
 
 .contact-form__input,
@@ -251,6 +360,7 @@ img.client-card__logo {
 }
 
 .contact-form__submit {
+    width :100%;
     width: 235px;
     height: 80px;
     color: white;
@@ -259,4 +369,35 @@ img.client-card__logo {
     text-decoration-thickness: 0.55px;
     margin-top: 43.8px;
     margin-bottom: 149.74px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.contact-form {
+    min-width: 320px;
+    max-height: 515px;
+}
+
+@media screen and (min-width: 767px) 
+    and (max-width: 1089px) {
+    .contact-form__container {
+        width: 320px;
+    }
+    
+    .contact-form__input,
+    .contact-form__textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-form__container,
+    .contact-form__input,
+    .contact-form__textarea {
+        width: 100%;
+    }
+    
+    .contact-form__submit {
+        margin-bottom: 51.69px;
+    }
 }
