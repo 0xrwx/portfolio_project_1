@@ -62,6 +62,16 @@
     line-height: 102px;
 }
 
+@media screen and (max-width: 969px)  {
+    .title {
+        font-size: 65px;
+        line-height: 67px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 .subtitle {
     font-weight: 600;
     font-size: 20px;
@@ -73,25 +83,91 @@
     justify-content: space-between;
     margin-top: 93px;
     margin-bottom: 78px;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1150px)  {
+    .main-photo {
+        width: 318px;
+        height: 370px;
+    }
+}
+
 
 .welcome__title {
     margin: 46px 0px 50px 0px;
 }
 
+@media screen and (min-width: 375px) 
+    and (max-width: 1150px)  {
+    .companies-clients {
+        /* padding: 66.59px 0px 56.59px 0px; */
+        border: 1px solid red;
+    }
+    
+    .companies-clients__list {
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        height: 10px; */
+        border: 2px solid blue;
+    
+        display: flex;
+        flex-wrap: wrap;
+    
+        justify-content: space-between;
+
+        /* max-height: 167px; */
+    }
+    
+    .companies-clients__item {
+        /* flex-shrink: 1; */
+        border: 2px solid orange;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 375px) 
+    and (max-width: 1150px)  {
+
+}
+
+@media screen and (max-width: 969px)  {
+    
+}
+
 .companies-clients {
-    padding: 66.59px 0px 56.59px 0px;
+    /* padding: 66.59px 0px 56.59px 0px; */
+    border: 1px solid red;
 }
 
 .companies-clients__list {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    height: 10px; */
+    border: 2px solid blue;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.companies-clients__item {
+    /* flex-shrink: 1; */
+    border: 2px solid orange;
+    align-self: center;
 }
 
 .skills__row {
     margin-top: 75px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .skills__column {
@@ -166,6 +242,7 @@
 .personal-clients__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .client-card__text {
@@ -195,6 +272,7 @@ img.client-card__logo {
 .footer__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-us__title {
@@ -229,14 +307,13 @@ img.client-card__logo {
 }
 
 .contact-form__container--description {
-    width: 530px;
     height: 215px;
 }
 
 .contact-form__input,
 .contact-form__textarea {
     background: #F3F3F3;
-    border: none;
+    /* border: none; */
     width: 465.21px;
     resize: none;
 }
@@ -247,6 +324,7 @@ img.client-card__logo {
 }
 
 .contact-form__submit {
+    width :100%;
     width: 235px;
     height: 80px;
     color: white;
@@ -255,4 +333,15 @@ img.client-card__logo {
     text-decoration-thickness: 0.55px;
     margin-top: 43.8px;
     margin-bottom: 149.74px;
+}
+
+@media screen and (max-width: 1089px)  {
+    .contact-form__container {
+        width: 320px;
+    }
+    
+    .contact-form__input,
+    .contact-form__textarea {
+        width: 255.21px;
+    }
 }
