@@ -317,6 +317,10 @@ img.client-card__logo {
     flex-wrap: wrap;
 }
 
+.about-us {
+    margin-bottom: 69px;
+}
+
 .about-us__title {
     font-weight: 600;
     font-size: 32px;
@@ -384,13 +388,7 @@ img.client-card__logo {
     max-height: 515px;
 }
 
-@media screen and (min-width: 769px) {
-    .personal-clients__item--addition {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) 
+@media screen and (min-width: 767px) 
     and (max-width: 1089px) {
     .contact-form__container {
         width: 320px;
@@ -409,4 +407,7 @@ img.client-card__logo {
         width: 100%;
     }
     
+    .contact-form__submit {
+        margin-bottom: 51.69px;
+    }
 }
