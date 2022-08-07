@@ -39,8 +39,9 @@
     }
 }
 
-.display-none {
-    display: none;
+.visually-hidden {
+    visibility: hidden;
+    line-height: 0%;
 }
 
 .page__top-bar {

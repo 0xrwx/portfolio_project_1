@@ -19,9 +19,9 @@
                     <a href="./index.html" class="top-bar__link">Logo</a>
                 </p>
                 <nav class="main-menu">
-                    <a href="#" class="main-menu__link main-menu__link--one">About</a>
-                    <a href="#" class="main-menu__link main-menu__link--two">Work</a>
-                    <a href="#" class="main-menu__link main-menu__link--three">Contact</a>
+                    <a href="#skills" class="main-menu__link main-menu__link--one">About</a>
+                    <a href="#latest-work" class="main-menu__link main-menu__link--two">Work</a>
+                    <a href="#contact" class="main-menu__link main-menu__link--three">Contact</a>
                 </nav>
             </div>
         </div>
@@ -44,7 +44,7 @@
             </header>
             <main class="page__main main">
                 <section class="companies-clients">
-                    <h2 class="display-none">Companies-clients</h2>
+                    <h2 class="companies-clients__title visually-hidden">Companies-clients</h2>
                     <ul class="companies-clients__list">
                         <li class="companies-clients__item margin-top-zero">
                             <a href="#" class="companies-clients__link">
@@ -79,6 +79,7 @@
                     </ul>
                 </section>
                 <section class="skills">
+                    <h2 class="skills__title visually-hidden" id="skills">Skills</h2>
                     <div class="skills__row">
                         <div class="skills__column">
                             <div class="skills-card">
@@ -115,7 +116,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="gallery">
+                <section class="gallery" id="latest-work">
                     <h2 class="gallery__title">Latest work</h2>
                     <ul class="gallery__list">
                         <li class="gallery__item">
@@ -234,7 +235,7 @@
             <footer class="page__footer footer">
                 <div class="footer__row">
                     <div class="footer__column">
-                        <div class="about-us">
+                        <section class="about-us">
                             <h2 class="about-us__title">Lets work together</h2>
                             <p class="about-us__subtitle">
                                 This is a template Figma file, turned into code using Anima. 
@@ -275,9 +276,10 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </section>
                     </div>
                     <div class="footer__column">
+                        <h2 class="contact-title visually-hidden" id="contact">Contact</h2>
                         <form class="contact-form" name="contact" onsubmit="return doForm()">
                             <div class="contact-form__container">
                                 <input type="text" name="name" class="contact-form__input"
