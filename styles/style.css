@@ -121,13 +121,6 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1150px)  {
-    .main-photo {
-        width: 318px;
-        height: 370px;
-    }
-}
-
 .welcome__text {
     margin-top: 90px;
 }
@@ -204,6 +197,22 @@
 
     display: flex;
     justify-content: center;    
+}
+
+@media screen and (max-width: 1110px) {
+    .welcome__text,
+    .welcome__image,
+    .skills__column,
+    .gallery__item,
+    .personal-clients__item,
+    .footer__column {
+        margin: 0 auto;
+    }
+
+    .main-photo {
+        width: 318px;
+        height: 370px;
+    }
 }
 
 .skills-card {
@@ -379,7 +388,7 @@ img.client-card__logo {
 }
 
 @media screen and (min-width: 782px) 
-    and (max-width: 1089px) {
+    and (max-width: 1110px) {
     .contact-form__container {
         width: 320px;
     }
