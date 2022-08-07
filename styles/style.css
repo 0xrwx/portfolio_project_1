@@ -25,7 +25,7 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 782px) {
     .wrapper-content {
         width: 320px;
     }
@@ -39,8 +39,9 @@
     }
 }
 
-.display-none {
-    display: none;
+.visually-hidden {
+    visibility: hidden;
+    line-height: 0%;
 }
 
 .page__top-bar {
@@ -79,7 +80,7 @@
     line-height: 102px;
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 782px)  {
     .title {
         font-size: 65px;
         line-height: 67px;
@@ -121,18 +122,11 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1150px)  {
-    .main-photo {
-        width: 318px;
-        height: 370px;
-    }
-}
-
 .welcome__text {
     margin-top: 90px;
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 782px)  {
     .welcome__text {
         margin-top: 44.17px;
     }
@@ -147,7 +141,7 @@
     margin: 46px 0px 50px 0px;
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 782px)  {
     .welcome__title {
         margin-bottom: 20.57px;
     }
@@ -177,7 +171,7 @@
     align-self: center;
 }
 
-@media screen and (max-width: 767px)  {
+@media screen and (max-width: 782px)  {
     .companies-clients__item {
         width: calc(50% - 40px);
         text-align: center;
@@ -204,6 +198,22 @@
 
     display: flex;
     justify-content: center;    
+}
+
+@media screen and (max-width: 1110px) {
+    .welcome__text,
+    .welcome__image,
+    .skills__column,
+    .gallery__item,
+    .personal-clients__item,
+    .footer__column {
+        margin: 0 auto;
+    }
+
+    .main-photo {
+        width: 318px;
+        height: 370px;
+    }
 }
 
 .skills-card {
@@ -378,8 +388,8 @@ img.client-card__logo {
     max-height: 515px;
 }
 
-@media screen and (min-width: 767px) 
-    and (max-width: 1089px) {
+@media screen and (min-width: 782px) 
+    and (max-width: 1110px) {
     .contact-form__container {
         width: 320px;
     }
@@ -390,7 +400,7 @@ img.client-card__logo {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 782px) {
     .contact-form__container,
     .contact-form__input,
     .contact-form__textarea {
