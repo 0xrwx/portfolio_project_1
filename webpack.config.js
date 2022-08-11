@@ -12,7 +12,16 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          MiniCssExtractPlugin.loader, 
+          'css-loader'
+        ],
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          'postcss-loader'
+        ]
       },
     ],
   },
