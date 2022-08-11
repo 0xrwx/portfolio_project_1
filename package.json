@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/1Sayd/portfolio_project_1#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "webpack": "^5.74.0",
