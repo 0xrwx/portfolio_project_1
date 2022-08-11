@@ -11,27 +11,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-        ]
-      }
-    ]
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+    ],
   },
   plugins: [
-    new HtmlWebpackPlugin( {
-      template: 'src/index.html',
-      filename: 'index.html',
-      inject: false
-    } ),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
     new MiniCssExtractPlugin()
   ],
 }
