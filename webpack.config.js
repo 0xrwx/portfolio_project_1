@@ -10,6 +10,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // rule for output images in the dist directory 
       {
         test: /\.html$/i,
         loader: 'html-loader',
@@ -22,6 +23,7 @@ module.exports = {
           }
         },
       },
+      // rule for processing and optimization CSS
       {
         test: /\.css$/i,
         use: [
@@ -30,6 +32,7 @@ module.exports = {
           'postcss-loader'
         ],
       },
+      // rule for processing and optimization SCSS
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -39,6 +42,7 @@ module.exports = {
           "sass-loader",
         ],
       },
+      // rule for optimization, renaming and output images in the ./dist/images directory
       {
         test: /\.(png|jpg|svg)$/i,
         type: 'asset',
