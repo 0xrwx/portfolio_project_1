@@ -7,10 +7,7 @@
     <title>Portfolio</title>
     
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/soft-reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="./index.js" defer></script>
 </head>
 <body class="page">
     <div class="page__container">
@@ -281,7 +278,7 @@
                     </div>
                     <div class="footer__column">
                         <h2 class="contact-title visually-hidden" id="contact">Contact</h2>
-                        <form class="contact-form" name="contact" onsubmit="return doForm()">
+                          <form class="contact-form" name="contact" type="module" onsubmit="return doForm()"> 
                             <div class="contact-form__container">
                                 <input type="text" name="name" class="contact-form__input"
                                 id="user-text" placeholder="Name" maxlength="40" required>

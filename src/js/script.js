@@ -8,3 +8,5 @@ function doForm() {
         ? alert("Thanks for your feedback.")
         : alert("That's sad.");
 }
+
+export default doForm;
