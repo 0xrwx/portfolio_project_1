@@ -1,7 +1,6 @@
 import doForm from './js/script.js';
-import './styles/normalize.css';
-import './styles/soft-reset.css';
-// import './styles/style.css';
+import './css/normalize.css';
+import './css/soft-reset.css';
 import './scss/style.scss'
 
 const form = document.forms.contact;

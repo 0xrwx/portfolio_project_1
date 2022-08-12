@@ -61,10 +61,17 @@ module.exports = {
     }
     ],
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist')
+    },
+    open: true,
+    compress: true,
+
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'main.html'
+      template: './src/index.html'
     }),
     new MiniCssExtractPlugin()
   ],
