@@ -178,6 +178,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  
+  &__item {
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 782px)  {
