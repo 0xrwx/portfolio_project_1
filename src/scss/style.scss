@@ -1,40 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+
 .page {
-
-  // .page__container
-
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: #2D2D2D;
   &__container {
+    max-width: 1280px;
+    min-width: 375px;
+    margin: 0 auto;
   }
-
-  // .page__top-bar
 
   &__top-bar {
-  }
-
-  // .page__header
-
-  &__header {
-  }
-
-  // .page__main
-
-  &__main {
-  }
-
-  // .page__footer
-
-  &__footer {
+    margin-top: 24.5px;
+    margin-bottom: 25.5px;
+    margin-left: 44.28px;
+    margin-right: 57.55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .wrapper-top {
 }
 .top-bar {
 
-  // .top-bar__logo
-
   &__logo {
   }
-
-  // .top-bar__link
 
   &__link {
   }
@@ -43,22 +36,14 @@
 }
 .main-menu {
 
-  // .main-menu__link
-
   &__link {
   }
-
-  // .main-menu__link--one
 
   &__link--one {
   }
 
-  // .main-menu__link--two
-
   &__link--two {
   }
-
-  // .main-menu__link--three
 
   &__link--three {
   }
@@ -69,32 +54,20 @@
 }
 .welcome {
 
-  // .welcome__text
-
   &__text {
   }
-
-  // .welcome__subtitle
 
   &__subtitle {
   }
 
-  // .welcome__title
-
   &__title {
   }
-
-  // .welcome__description
 
   &__description {
   }
 
-  // .welcome__image
-
   &__image {
   }
-
-  // .welcome__main-photo
 
   &__main-photo {
   }
@@ -111,27 +84,17 @@
 }
 .companies-clients {
 
-  // .companies-clients__title
-
   &__title {
   }
-
-  // .companies-clients__list
 
   &__list {
   }
 
-  // .companies-clients__item
-
   &__item {
   }
 
-  // .companies-clients__link
-
   &__link {
   }
-
-  // .companies-clients__logo
 
   &__logo {
   }
@@ -142,168 +105,108 @@
 }
 .skills {
 
-  // .skills__title
-
   &__title {
   }
-
-  // .skills__row
 
   &__row {
   }
 
-  // .skills__column
-
   &__column {
   }
-
-  // .skills__column--center
 
   &__column--center {
   }
 }
 .skills-card {
 
-  // .skills-card__image
-
   &__image {
   }
 
-  // .skills-card__title
-
   &__title {
   }
-
-  // .skills-card__description
 
   &__description {
   }
 }
 .gallery {
 
-  // .gallery__title
-
   &__title {
   }
 
-  // .gallery__list
-
   &__list {
   }
-
-  // .gallery__item
 
   &__item {
   }
 }
 .gallery-card {
 
-  // .gallery-card__link
-
   &__link {
   }
-
-  // .gallery-card__image
 
   &__image {
   }
 
-  // .gallery-card__title
-
   &__title {
   }
-
-  // .gallery-card__subtitle
 
   &__subtitle {
   }
 }
 .personal-clients {
 
-  // .personal-clients__title
-
   &__title {
   }
 
-  // .personal-clients__list
-
   &__list {
   }
-
-  // .personal-clients__item
 
   &__item {
   }
 }
 .client-card {
 
-  // .client-card__text
-
   &__text {
   }
-
-  // .client-card__about
 
   &__about {
   }
 
-  // .client-card__logo
-
   &__logo {
   }
 
-  // .client-card__score
-
   &__score {
   }
-
-  // .client-card__info
 
   &__info {
   }
 }
 .footer {
 
-  // .footer__row
-
   &__row {
   }
-
-  // .footer__column
 
   &__column {
   }
 }
 .about-us {
 
-  // .about-us__title
-
   &__title {
   }
-
-  // .about-us__subtitle
 
   &__subtitle {
   }
 }
 .social-networks {
 
-  // .social-networks__list
-
   &__list {
   }
-
-  // .social-networks__item
 
   &__item {
   }
 
-  // .social-networks__link
-
   &__link {
   }
-
-  // .social-networks__image
 
   &__image {
   }
@@ -312,27 +215,17 @@
 }
 .contact-form {
 
-  // .contact-form__container
-
   &__container {
   }
-
-  // .contact-form__input
 
   &__input {
   }
 
-  // .contact-form__container--description
-
   &__container--description {
   }
 
-  // .contact-form__textarea
-
   &__textarea {
   }
-
-  // .contact-form__submit
 
   &__submit {
   }

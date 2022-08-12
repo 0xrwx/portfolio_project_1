@@ -31,6 +31,15 @@ module.exports = {
         ],
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          'postcss-loader',
+          "sass-loader",
+        ],
+      },
+      {
         test: /\.(png|jpg|svg)$/i,
         type: 'asset',
         use: [{
