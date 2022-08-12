@@ -19,7 +19,7 @@ To view a site, [click here](https://1sayd.github.io/portfolio_project_1/)
 
 ## How To Bundle Your Own 🔧
 
-From your command line, first clone Simplefolio:
+From your command line, first clone portfolio_project_1:
 
 ```bash
 # Clone this repository
@@ -32,7 +32,7 @@ $ cd portfolio_project_1
 $ git remote remove origin
 ```
 
-Then you can install the dependencies either using NPM
+Then you can install the dependencies using NPM
 
 ```bash
 # Install dependencies
