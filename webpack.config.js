@@ -14,20 +14,16 @@ module.exports = {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader, 
-          'css-loader'
-        ],
-      },
-      {
-        test: /\.css$/i,
-        use: [
+          'css-loader',
           'postcss-loader'
-        ]
+        ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      filename: 'main.html'
     }),
     new MiniCssExtractPlugin()
   ],

@@ -1,0 +1,1 @@
+(()=>{"use strict";document.forms.contact.addEventListener("submit",(function(){const e=document.forms.contact;let t=e.elements.name.value,a=e.elements.email.value;confirm(`Are you sure that your name is ${t}, and email is ${a} ?`)?alert("Thanks for your feedback."):alert("That's sad.")}))})();
