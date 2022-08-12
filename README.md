@@ -3,7 +3,7 @@
 ## My firts web project
 
 <h2>
-  <img src="./screenshot/1.png" alt="Welcome page" width="100%" />
+  <a href="https://1sayd.github.io/portfolio_project_1/"><img src="./screenshot/1.png" alt="Welcome page" width="100%" /></a>
   <br>
 </h2>
 
@@ -13,7 +13,7 @@
 ⚡️ Use modern bundler, Webpack 5\
 ⚡️ Styled with CSS preprocessor, SASS/SCSS\
 ⚡️ Fully Responsive\
-⚡️ Auto Image, HTML and SCSS/SASS optimized using bundler
+⚡️ Auto Image, HTML and SCSS/SASS optimized using webpack 5
 
 To view a site, [click here](https://1sayd.github.io/portfolio_project_1/)
 
@@ -41,3 +41,6 @@ $ npm install
 # Start development server
 $ npm run dev
 ```
+
+## Figma Community Template
+To view a template source, [click here](https://www.figma.com/community/file/1095695980466714349)
