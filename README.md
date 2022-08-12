@@ -3,7 +3,7 @@
 ## My firts web project
 
 <h2>
-  <img src="./screenshots/1.png" alt="Welcome page" width="100%" />
+  <img src="./screenshot/1.png" alt="Welcome page" width="100%" />
   <br>
 </h2>
 
