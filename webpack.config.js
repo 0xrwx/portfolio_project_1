@@ -11,6 +11,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            urlFilter: (attribute, value, resourcePath) => {
+              if (/index.js$/.test(value)) return false;
+              return true;
+            },
+          }
+        },
+      },
+      {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader, 
@@ -18,6 +30,26 @@ module.exports = {
           'postcss-loader'
         ],
       },
+      {
+        test: /\.(png|jpg|svg)$/i,
+        type: 'asset',
+        use: [{
+          loader: 'image-webpack-loader',
+          options: {
+            pngquant: {
+              quality: [.90, .95],
+            },
+          }
+        }],
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024 // 10kb
+          }
+        },
+        generator: {
+          filename: 'images/[name]-[hash][ext]'
+        }
+    }
     ],
   },
   plugins: [
