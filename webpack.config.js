@@ -1,6 +1,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -44,7 +45,7 @@ module.exports = {
       },
       // rule for optimization, renaming and output images in the ./dist/images directory
       {
-        test: /\.(png|jpg|svg)$/i,
+        test: /\.(png|svg)$/i,
         type: 'asset',
         use: [{
           loader: 'image-webpack-loader',
@@ -59,10 +60,31 @@ module.exports = {
             maxSize: 10 * 1024 // 10kb
           }
         },
-        generator: {
-          filename: 'images/[name]-[hash][ext]'
-        }
-    }
+      }
+    ],
+  },
+  optimization: {
+    minimizer: [
+      "...",
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.squooshMinify,
+          options: {
+            encodeOptions: {
+              mozjpeg: {
+                quality: 95,
+              },
+              webp: {
+                lossless: 1,
+              },
+              avif: {
+                // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
+                cqLevel: 0,
+              },
+            },
+          },
+        },
+      }),
     ],
   },
   devServer: {
