@@ -1,9 +1,16 @@
 # portfolio_project_1 ⚡️
 
-## My firts web project
+## Desktop version
 
-<h2>
-  <a href="https://1sayd.github.io/portfolio_project_1/"><img src="./screenshot/1.png" alt="Welcome page" width="100%" /></a>
+<h2 align="center">
+  <a href="https://1sayd.github.io/portfolio_project_1/"><img src="./screenshot/1.png" alt="Welcome page" /></a>
+  <br>
+</h2>
+
+## Mobile version
+
+<h2 align="center">
+  <a href="https://1sayd.github.io/portfolio_project_1/"><img src="./screenshot/2.png" alt="Welcome page" /></a>
   <br>
 </h2>
 
@@ -40,6 +47,9 @@ $ npm install
 
 # Start development server
 $ npm run dev
+
+# Or start productoin build
+$ npm run build
 ```
 
 ## Figma Community Template
